@@ -27,7 +27,7 @@ We have certain list of products with structure (productId: Int, skuId: String) 
 * Java 1.8 JDK
 * Maven
 
-## Instructions
+## Instructions:
 1. Clone this repository
 
   `git clone https://github.com/YArane/product_duplicate_finder`
@@ -38,7 +38,7 @@ We have certain list of products with structure (productId: Int, skuId: String) 
   
 3. Build project with maven
 
-  `maven clean install`
+  `mvn clean install`
   
 4. Run java application
 
@@ -55,7 +55,7 @@ We have certain list of products with structure (productId: Int, skuId: String) 
 ### Java Docs
 1. Generate java docs 
 
-`maven javadoc:javadoc`
+`mvn javadoc:javadoc`
 
 2. To open java doc in browser, navigate to
 
