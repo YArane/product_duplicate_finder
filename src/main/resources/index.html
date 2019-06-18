@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Duplicate Finder</title>
+</head>
+<body>
+<h1>Product Duplicate Finder</h1>
+We have certain list of products with structure (productId: Int, skuId: String) where (productId, skuId) is expected to
+be always be a unique pair. Due to an error in data some ids got duplicate sku ids where as there was no change to
+productIds. You need to create an API which will return records with duplicate skuIds from the input request list.
+<h3>HTTP POST Request</h3>
+<textarea readonly rows=10 cols="50">
+[
+    {"productId": 1, "skuId": "a10"},
+
+    {"productId": 2, "skuId": "a10"},
+
+    {"productId": 3, "skuId": "a11"},
+
+    {"productId": 4, "skuId": "a12"}
+]
+</textarea>
+
+<h3>Expected API Response</h3>
+
+<textarea readonly rows="8" cols="50">
+[
+
+    {"productId": 1, "skuId": "a10"},
+
+    {"productId": 2, "skuId": "a10"}
+
+]
+</textarea>
+
+
+</body>
+</html>
